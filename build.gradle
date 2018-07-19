@@ -54,7 +54,7 @@ dependencies {
 //	Sql Server
 //	runtime('com.microsoft.sqlserver:mssql-jdbc')
 //	End databases
- 	compile("com.quijotelui.firmador:QuijoteLuiFirmador:1.5")
+ 	compile("com.quijotelui.firmador:QuijoteLuiFirmador:1.2")
 	compile("com.quijotelui.clientews:QuijoteLuiClient:1.2")
 //	Librería para generar el archivo xml en la carpeta rechazado cuando sea el caso.
 //	Obligatorio para QuijoteLuiClient
@@ -65,4 +65,8 @@ dependencies {
 //	Correo Electrónico
 	compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
 	compile group: 'com.sun.mail', name: 'javax.mail', version: '1.6.0'
+//	QuijoteLui Key Store
+	compile group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.59'
+	compile group: 'joda-time', name: 'joda-time', version: '2.10'
+	compile group: 'org.quijotelui', name: 'QuijoteLuiKS', version: '1.0'
 }
