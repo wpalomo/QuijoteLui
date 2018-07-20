@@ -8,6 +8,7 @@ import com.quijotelui.electronico.xml.GeneraRetencion
 import com.quijotelui.model.Informacion
 import com.quijotelui.service.*
 import org.apache.commons.mail.EmailException
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import java.io.File
@@ -50,6 +51,9 @@ class EnviarCorreo(val codigo : String,
             : this(codigo, numero, parametroService, informacionService) {
         this.notaCreditoService = notaCreditoService
     }
+
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     private fun getClaveAcceso(tipo : TipoComprobante) : String {
 
@@ -120,7 +124,7 @@ class EnviarCorreo(val codigo : String,
         }
 
         val parametro = parametroService.findAll()
-        val datosCorreo = Parametros.getDatosCorreo(parametro)
+        val datosCorreo = Parametros.getDatosCorreo(parametro, keyProperty)
 
         val rutaPDF= Parametros.getRuta(parametroService.findByNombre("PDF"))
         val rutaXML= Parametros.getRuta(parametroService.findByNombre("Autorizado"))
