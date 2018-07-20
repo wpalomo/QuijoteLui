@@ -9,6 +9,7 @@ import com.quijotelui.service.IElectronicoService
 import com.quijotelui.service.IReporteRetencionService
 import com.quijotelui.service.IInformacionService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -33,6 +34,8 @@ class ReporteRetencionRestApi {
     @Autowired
     lateinit var informacionService : IInformacionService
 
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_retencion/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
@@ -78,6 +81,7 @@ class ReporteRetencionRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.enviar(TipoComprobante.RETENCION)
@@ -95,6 +99,7 @@ class ReporteRetencionRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     println("Respuesta: ${row.estado}")
@@ -142,6 +147,7 @@ class ReporteRetencionRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.comprobar(informacionService, TipoComprobante.RETENCION)

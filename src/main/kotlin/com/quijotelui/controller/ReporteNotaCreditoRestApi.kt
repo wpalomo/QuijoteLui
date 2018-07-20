@@ -5,6 +5,7 @@ import com.quijotelui.electronico.util.TipoComprobante
 import com.quijotelui.model.ReporteNotaCredito
 import com.quijotelui.service.*
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -28,6 +29,9 @@ class ReporteNotaCreditoRestApi {
 
     @Autowired
     lateinit var informacionService : IInformacionService
+
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_nota_cedito/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
@@ -74,6 +78,7 @@ class ReporteNotaCreditoRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.enviar(TipoComprobante.NOTA_CREDITO)
@@ -92,6 +97,7 @@ class ReporteNotaCreditoRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     println("Respuesta: ${row.estado}")
@@ -139,6 +145,7 @@ class ReporteNotaCreditoRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.comprobar(informacionService, TipoComprobante.NOTA_CREDITO)

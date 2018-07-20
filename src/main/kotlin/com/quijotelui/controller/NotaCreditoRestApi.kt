@@ -8,6 +8,7 @@ import com.quijotelui.service.IInformacionService
 import com.quijotelui.service.INotaCreditoService
 import com.quijotelui.service.IParametroService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -28,6 +29,9 @@ class NotaCreditoRestApi {
 
     @Autowired
     lateinit var informacionService : IInformacionService
+
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @GetMapping("/nota_credito/codigo/{codigo}/numero/{numero}")
     fun getNotaCredito(@PathVariable(value = "codigo") codigo: String,
@@ -55,7 +59,7 @@ class NotaCreditoRestApi {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             }
             else {
-                val genera = Electronica(notaCreditoService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(notaCreditoService, codigo, numero, parametroService, keyProperty ,electronicoService)
 
                 genera.enviar(TipoComprobante.NOTA_CREDITO)
                 return ResponseEntity<MutableList<NotaCredito>>(notaCredito, HttpStatus.OK)
@@ -80,7 +84,7 @@ class NotaCreditoRestApi {
             if (notaCredito.isEmpty()) {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             } else {
-                val genera = Electronica(notaCreditoService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(notaCreditoService, codigo, numero, parametroService, keyProperty , electronicoService)
 
                 genera.enviar(TipoComprobante.NOTA_CREDITO)
 

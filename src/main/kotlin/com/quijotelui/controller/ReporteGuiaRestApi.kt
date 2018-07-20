@@ -5,6 +5,7 @@ import com.quijotelui.electronico.util.TipoComprobante
 import com.quijotelui.model.ReporteGuia
 import com.quijotelui.service.*
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -28,6 +29,9 @@ class ReporteGuiaRestApi {
 
     @Autowired
     lateinit var informacionService : IInformacionService
+
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_guia/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
@@ -73,6 +77,7 @@ class ReporteGuiaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.enviar(TipoComprobante.GUIA)
@@ -91,6 +96,7 @@ class ReporteGuiaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.comprobar(informacionService, TipoComprobante.GUIA)
@@ -136,6 +142,7 @@ class ReporteGuiaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.comprobar(informacionService, TipoComprobante.GUIA)
