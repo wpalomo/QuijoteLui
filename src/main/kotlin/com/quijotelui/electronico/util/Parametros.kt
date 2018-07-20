@@ -2,6 +2,10 @@ package com.quijotelui.electronico.util
 
 import com.quijotelui.electronico.correo.ConfiguracionCorreo
 import com.quijotelui.model.Parametro
+import java.text.ParseException
+import java.util.*
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 class Parametros{
 
@@ -92,6 +96,32 @@ class Parametros{
                 Encriptar.setKey(key)
                 return ConfiguracionCorreo(servidor, puerto, correo, Encriptar.decrypt(clave))
             }
+        }
+
+        fun getSuscripcion(parametro: MutableList<Parametro>, key: String) : Date {
+            println("Suscripción: ${parametro[0].nombre.toString()} -> ${parametro[0].valor.toString()}")
+            if (parametro.isEmpty()) {
+                return errorDate()
+            }
+            else {
+                val formatter = SimpleDateFormat("yyyy-MM-dd")
+                val suscripcionEncryptedData : String = parametro[0].valor.toString()
+                Encriptar.setKey(key)
+                val suscripcion = Encriptar.decrypt(suscripcionEncryptedData)
+
+                return try {
+                    formatter.parse(suscripcion)
+                } catch (e : ParseException) {
+                    errorDate()
+                }
+            }
+        }
+
+        private fun errorDate() : Date {
+            val cal = Calendar.getInstance()
+            cal.time = Date()
+            cal.add(Calendar.DATE, -1)
+            return cal.time
         }
     }
 
