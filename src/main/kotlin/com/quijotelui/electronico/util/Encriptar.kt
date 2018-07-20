@@ -8,7 +8,23 @@ import java.util.Base64
 object Encriptar {
     private val ALGO = "AES"
     //Cambia la serie de números para generar una clave distinta
-    private val keyValue = byteArrayOf('q'.toByte(), 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)
+    private var keyValue = byteArrayOf('q'.toByte(), 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)
+
+    fun setKey(key : String) {
+//        var i = 0
+//        for (k in keyValue.toSet()) {
+//            i++
+//            println("$i -> $k")
+//        }
+//
+//        println()
+        keyValue = key.toByteArray()
+//        i = 0
+//        for (k in keyValue.toSet()) {
+//            i++
+//            println("$i -> ${k.toChar()}")
+//        }
+    }
 
     /**
      * Encrypt a string with AES algorithm.
@@ -53,7 +69,8 @@ object Encriptar {
 
 /*
 fun main(args: Array<String>) {
-    val claveEncriptada = Encriptar.encrypt("MiClaveDeLaFirma")
+    Encriptar.setKey("dieciseisnumeros")
+    val claveEncriptada = Encriptar.encrypt("Gluc4g0n@@")
     val claveDesencriptada = Encriptar.decrypt(claveEncriptada)
 
     println("Clave encriptada: " + claveEncriptada)
