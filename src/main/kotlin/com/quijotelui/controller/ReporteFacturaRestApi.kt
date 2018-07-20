@@ -4,7 +4,9 @@ import com.quijotelui.electronico.ejecutar.Electronica
 import com.quijotelui.electronico.util.TipoComprobante
 import com.quijotelui.model.ReporteFactura
 import com.quijotelui.service.*
+import com.quijotelui.subscription.Subscription
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -29,6 +31,8 @@ class ReporteFacturaRestApi {
     @Autowired
     lateinit var informacionService : IInformacionService
 
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_factura/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
@@ -55,6 +59,9 @@ class ReporteFacturaRestApi {
     @GetMapping("/factura_autoriza/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
     fun autorizarFactura(@PathVariable(value = "fechaInicio") fechaInicio : String,
                         @PathVariable(value = "fechaFin") fechaFin : String) : ResponseEntity<MutableList<ReporteFactura>> {
+
+        val subscription = Subscription(parametroService)
+        subscription.isAlive(keyProperty)
 
         var reporteFactura = reporteFacturaService.findByFechasEstado(
                 fechaInicio,

@@ -70,7 +70,7 @@ object Encriptar {
 /*
 fun main(args: Array<String>) {
     Encriptar.setKey("dieciseisnumeros")
-    val claveEncriptada = Encriptar.encrypt("Gluc4g0n@@")
+    val claveEncriptada = Encriptar.encrypt("2018-07-31")
     val claveDesencriptada = Encriptar.decrypt(claveEncriptada)
 
     println("Clave encriptada: " + claveEncriptada)
