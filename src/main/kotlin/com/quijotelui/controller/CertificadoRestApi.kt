@@ -22,18 +22,18 @@ class CertificadoRestApi {
     lateinit var parametroService : IParametroService
 
     @Value("\${key.property}")
-    val keyProperty: String? = null
+    val keyProperty: String = ""
 
     @CrossOrigin(value = "*")
     @GetMapping("/keyinfo")
     fun getKeyInfo() : ResponseEntity<Map<String, String>> {
-        println("Test key property: $keyProperty")
 
         Security.addProvider(BouncyCastleProvider())
 
         val keyStoreHistory = HistoriaCertificado()
         val pathElectronica = Parametros.getRuta(parametroService.findByNombre("Firma Electrónica"))
-        val keyElectronica = Parametros.getClaveElectronica(parametroService.findByNombre("Clave Firma Electrónica"))
+        val keyElectronica = Parametros.getClaveElectronica(
+                parametroService.findByNombre("Clave Firma Electrónica"), keyProperty)
 
         val k = keyStoreHistory.getInformacion(pathElectronica, keyElectronica)
 
