@@ -8,6 +8,7 @@ import com.quijotelui.service.IGuiaService
 import com.quijotelui.service.IInformacionService
 import com.quijotelui.service.IParametroService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -28,6 +29,9 @@ class GuiaRestApi {
 
     @Autowired
     lateinit var informacionService : IInformacionService
+
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @GetMapping("/guia/codigo/{codigo}/numero/{numero}")
     fun getGuia(@PathVariable(value = "codigo") codigo: String,
@@ -55,7 +59,7 @@ class GuiaRestApi {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             }
             else {
-                val genera = Electronica(guiaService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(guiaService, codigo, numero, parametroService, keyProperty ,electronicoService)
 
                 genera.enviar(TipoComprobante.GUIA)
                 return ResponseEntity<MutableList<Guia>>(guia, HttpStatus.OK)
@@ -80,7 +84,7 @@ class GuiaRestApi {
             if (guia.isEmpty()) {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             } else {
-                val genera = Electronica(guiaService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(guiaService, codigo, numero, parametroService, keyProperty ,electronicoService)
 
                 genera.enviar(TipoComprobante.GUIA)
 

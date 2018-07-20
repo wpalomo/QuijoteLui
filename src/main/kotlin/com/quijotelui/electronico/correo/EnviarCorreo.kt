@@ -18,6 +18,7 @@ import javax.mail.internet.InternetAddress
 class EnviarCorreo(val codigo : String,
                    val numero : String,
                    val parametroService : IParametroService,
+                   val key : String,
                    val informacionService : IInformacionService) {
 
     var documento : String = ""
@@ -28,32 +29,32 @@ class EnviarCorreo(val codigo : String,
     constructor(codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 informacionService : IInformacionService,
                 facturaService : IFacturaService)
-            : this(codigo, numero, parametroService, informacionService) {
+            : this(codigo, numero, parametroService, key, informacionService) {
         this.facturaService = facturaService
     }
 
     constructor(codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 informacionService : IInformacionService,
                 retencionService : IRetencionService)
-            : this(codigo, numero, parametroService, informacionService) {
+            : this(codigo, numero, parametroService, key, informacionService) {
         this.retencionService = retencionService
     }
 
     constructor(codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 informacionService : IInformacionService,
                 notaCreditoService : INotaCreditoService)
-            : this(codigo, numero, parametroService, informacionService) {
+            : this(codigo, numero, parametroService, key, informacionService) {
         this.notaCreditoService = notaCreditoService
     }
-
-    @Value("\${key.property}")
-    val keyProperty: String = ""
 
     private fun getClaveAcceso(tipo : TipoComprobante) : String {
 
@@ -124,7 +125,7 @@ class EnviarCorreo(val codigo : String,
         }
 
         val parametro = parametroService.findAll()
-        val datosCorreo = Parametros.getDatosCorreo(parametro, keyProperty)
+        val datosCorreo = Parametros.getDatosCorreo(parametro, key)
 
         val rutaPDF= Parametros.getRuta(parametroService.findByNombre("PDF"))
         val rutaXML= Parametros.getRuta(parametroService.findByNombre("Autorizado"))

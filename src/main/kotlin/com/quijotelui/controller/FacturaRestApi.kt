@@ -8,6 +8,7 @@ import com.quijotelui.service.IFacturaService
 import com.quijotelui.service.IInformacionService
 import com.quijotelui.service.IParametroService
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
@@ -29,6 +30,9 @@ class FacturaRestApi {
 
     @Autowired
     lateinit var informacionService : IInformacionService
+
+    @Value("\${key.property}")
+    val keyProperty: String = ""
 
     @GetMapping("/facturas")
     fun getFacturas() : ResponseEntity<MutableList<Factura>> {
@@ -68,7 +72,7 @@ class FacturaRestApi {
             if (factura.isEmpty()) {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             } else {
-                val genera = Electronica(facturaService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(facturaService, codigo, numero, parametroService, keyProperty ,electronicoService)
 
                 genera.enviar(TipoComprobante.FACTURA)
                 return ResponseEntity<MutableList<Factura>>(factura, HttpStatus.OK)
@@ -91,7 +95,7 @@ class FacturaRestApi {
             if (factura.isEmpty()) {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             } else {
-                val genera = Electronica(facturaService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(facturaService, codigo, numero, parametroService, keyProperty ,electronicoService)
 
                 genera.comprobar(informacionService, TipoComprobante.FACTURA)
                 return ResponseEntity<MutableList<Factura>>(factura, HttpStatus.OK)
@@ -116,7 +120,7 @@ class FacturaRestApi {
             if (factura.isEmpty()) {
                 return ResponseEntity(HttpStatus.NOT_FOUND)
             } else {
-                val genera = Electronica(facturaService, codigo, numero, parametroService, electronicoService)
+                val genera = Electronica(facturaService, codigo, numero, parametroService, keyProperty ,electronicoService)
 
                 genera.enviar(TipoComprobante.FACTURA)
 

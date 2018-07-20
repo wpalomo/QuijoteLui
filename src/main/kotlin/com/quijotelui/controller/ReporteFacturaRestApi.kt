@@ -83,6 +83,7 @@ class ReporteFacturaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.enviar(TipoComprobante.FACTURA)
@@ -102,6 +103,7 @@ class ReporteFacturaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     val respuesta = row.estado
@@ -149,6 +151,7 @@ class ReporteFacturaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     genera.comprobar(informacionService, TipoComprobante.FACTURA)
@@ -182,6 +185,7 @@ class ReporteFacturaRestApi {
                             row.codigo.toString(),
                             row.numero.toString(),
                             parametroService,
+                            keyProperty,
                             electronicoService)
 
                     val respuesta = genera.enviar(TipoComprobante.FACTURA)

@@ -17,16 +17,12 @@ import ec.gob.sri.comprobantes.ws.Comprobante
 import ec.gob.sri.comprobantes.ws.Mensaje
 import ec.gob.sri.comprobantes.ws.RespuestaSolicitud
 import ec.gob.sri.comprobantes.ws.aut.Autorizacion
-import org.springframework.beans.factory.annotation.Value
 import java.io.File
 import java.io.IOException
 import java.net.HttpURLConnection
 import java.net.URL
 
-class ProcesarElectronica(val parametroService : IParametroService) {
-
-    @Value("\${key.property}")
-    val keyProperty: String = ""
+class ProcesarElectronica(val parametroService : IParametroService, val key : String) {
 
     fun firmar(claveAcceso : String) : Boolean {
         val xadesBesFirma = XAdESBESSignature()
@@ -34,7 +30,7 @@ class ProcesarElectronica(val parametroService : IParametroService) {
         val rutaFirmado = Parametros.getRuta(parametroService.findByNombre("Firmado"))
         val rutaFirmaElectronica = Parametros.getRuta(parametroService.findByNombre("Firma Electrónica"))
         val firmaElectronica = Parametros.getClaveElectronica(
-                parametroService.findByNombre("Clave Firma Electrónica"), keyProperty)
+                parametroService.findByNombre("Clave Firma Electrónica"), key)
 
         if (!Archivos.esDirectorio(rutaFirmado) && !Archivos.esArchivo(rutaFirmaElectronica)) {
             return false

@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.util.*
 
-class Electronica(val codigo : String, val numero : String, val parametroService : IParametroService) {
+class Electronica(val codigo : String, val numero : String, val parametroService : IParametroService, val key : String) {
 
     var claveAcceso : String? = null
     private var facturaService : IFacturaService? = null
@@ -28,8 +28,9 @@ class Electronica(val codigo : String, val numero : String, val parametroService
                 codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 electronicoService : IElectronicoService)
-            : this(codigo, numero, parametroService) {
+            : this(codigo, numero, parametroService, key) {
         this.facturaService = facturaService
         this.electronicoService = electronicoService
     }
@@ -38,8 +39,9 @@ class Electronica(val codigo : String, val numero : String, val parametroService
                 codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 electronicoService : IElectronicoService)
-            : this(codigo, numero, parametroService) {
+            : this(codigo, numero, parametroService, key) {
         this.retencionService = retencionService
         this.electronicoService = electronicoService
     }
@@ -48,8 +50,9 @@ class Electronica(val codigo : String, val numero : String, val parametroService
                 codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 electronicoService : IElectronicoService)
-            : this(codigo, numero, parametroService) {
+            : this(codigo, numero, parametroService, key) {
         this.guiaService = guiaService
         this.electronicoService = electronicoService
     }
@@ -58,8 +61,9 @@ class Electronica(val codigo : String, val numero : String, val parametroService
                 codigo : String,
                 numero : String,
                 parametroService : IParametroService,
+                key: String,
                 electronicoService : IElectronicoService)
-            : this(codigo, numero, parametroService) {
+            : this(codigo, numero, parametroService, key) {
         this.notaCreditoService = notaCreditoService
         this.electronicoService = electronicoService
     }
@@ -88,7 +92,7 @@ class Electronica(val codigo : String, val numero : String, val parametroService
             return ""
         }
 
-        val procesar = ProcesarElectronica(parametroService)
+        val procesar = ProcesarElectronica(parametroService, key)
         var respuestaEstado = ""
         if (procesar.firmar(this.claveAcceso!!)) {
 
@@ -108,7 +112,7 @@ class Electronica(val codigo : String, val numero : String, val parametroService
 
         this.claveAcceso = generaClaveAcceso(tipo)
 
-        val procesar = ProcesarElectronica(parametroService)
+        val procesar = ProcesarElectronica(parametroService, key)
 
         val autorizacionEstado = procesar.comprobar(this.claveAcceso!!)
 
@@ -122,15 +126,15 @@ class Electronica(val codigo : String, val numero : String, val parametroService
         println("Estado de ${codigo} ${numero} para envío al correo: ${autorizacionEstado.autorizacion.estado}")
         if (autorizacionEstado.autorizacion.estado == "AUTORIZADO"){
             if (tipo == TipoComprobante.FACTURA) {
-                val correo = EnviarCorreo(codigo, numero, parametroService, informacionService, facturaService!!)
+                val correo = EnviarCorreo(codigo, numero, parametroService, key, informacionService, facturaService!!)
                 correo.enviar(tipo)
             }
             else if (tipo == TipoComprobante.RETENCION) {
-                val correo = EnviarCorreo(codigo, numero, parametroService, informacionService, retencionService!!)
+                val correo = EnviarCorreo(codigo, numero, parametroService, key, informacionService, retencionService!!)
                 correo.enviar(tipo)
             }
             else if (tipo == TipoComprobante.NOTA_CREDITO) {
-                val correo = EnviarCorreo(codigo, numero, parametroService, informacionService, notaCreditoService!!)
+                val correo = EnviarCorreo(codigo, numero, parametroService, key, informacionService, notaCreditoService!!)
                 correo.enviar(tipo)
             }
         }
