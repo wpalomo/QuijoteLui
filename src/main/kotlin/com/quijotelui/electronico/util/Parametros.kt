@@ -106,12 +106,14 @@ class Parametros{
             else {
                 val formatter = SimpleDateFormat("yyyy-MM-dd")
                 val suscripcionEncryptedData : String = parametro[0].valor.toString()
-                Encriptar.setKey(key)
-                val suscripcion = Encriptar.decrypt(suscripcionEncryptedData)
 
                 return try {
+                    Encriptar.setKey(key)
+                    val suscripcion = Encriptar.decrypt(suscripcionEncryptedData)
                     formatter.parse(suscripcion)
                 } catch (e : ParseException) {
+                    errorDate()
+                } catch (e : Exception) {
                     errorDate()
                 }
             }

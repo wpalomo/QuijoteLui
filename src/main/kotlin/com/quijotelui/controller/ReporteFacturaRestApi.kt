@@ -61,7 +61,9 @@ class ReporteFacturaRestApi {
                         @PathVariable(value = "fechaFin") fechaFin : String) : ResponseEntity<MutableList<ReporteFactura>> {
 
         val subscription = Subscription(parametroService)
-        subscription.isAlive(keyProperty)
+        if (!subscription.isAlive(keyProperty)) {
+            return ResponseEntity(HttpStatus.UNAUTHORIZED)
+        }
 
         var reporteFactura = reporteFacturaService.findByFechasEstado(
                 fechaInicio,
