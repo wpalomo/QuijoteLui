@@ -31,7 +31,7 @@ class NotaCreditoRestApi {
     lateinit var informacionService : IInformacionService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @GetMapping("/nota_credito/codigo/{codigo}/numero/{numero}")
     fun getNotaCredito(@PathVariable(value = "codigo") codigo: String,

@@ -31,7 +31,7 @@ class ReporteGuiaRestApi {
     lateinit var informacionService : IInformacionService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_guia/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")

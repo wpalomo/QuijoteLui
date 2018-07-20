@@ -32,7 +32,7 @@ class ReporteFacturaRestApi {
     lateinit var informacionService : IInformacionService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_factura/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
