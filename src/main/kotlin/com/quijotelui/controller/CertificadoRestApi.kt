@@ -22,7 +22,7 @@ class CertificadoRestApi {
     lateinit var parametroService : IParametroService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @CrossOrigin(value = "*")
     @GetMapping("/keyinfo")

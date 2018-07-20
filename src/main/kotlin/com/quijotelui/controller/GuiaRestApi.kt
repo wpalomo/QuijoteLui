@@ -31,7 +31,7 @@ class GuiaRestApi {
     lateinit var informacionService : IInformacionService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @GetMapping("/guia/codigo/{codigo}/numero/{numero}")
     fun getGuia(@PathVariable(value = "codigo") codigo: String,

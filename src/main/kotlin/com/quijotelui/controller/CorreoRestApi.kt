@@ -26,7 +26,7 @@ class CorreoRestApi {
     lateinit var facturaService : IFacturaService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @CrossOrigin(value = "*")
     @GetMapping("/correo/codigo/{codigo}/numero/{numero}")

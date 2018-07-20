@@ -31,7 +31,7 @@ class RetencionRestApi {
     lateinit var informacionService : IInformacionService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @GetMapping("/retenciones")
     fun getRetenciones(): ResponseEntity<MutableList<Retencion>> {

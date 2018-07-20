@@ -31,7 +31,7 @@ class ReporteNotaCreditoRestApi {
     lateinit var informacionService : IInformacionService
 
     @Value("\${key.property}")
-    val keyProperty: String = ""
+    lateinit var keyProperty: String
 
     @CrossOrigin(value = "*")
     @GetMapping("/reporte_nota_cedito/fechaInicio/{fechaInicio}/fechaFin/{fechaFin}")
