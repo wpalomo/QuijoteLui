@@ -49,7 +49,7 @@ class Parametros{
             return "El parámetro Ruta no fue encontrado"
         }
 
-        fun getClaveElectronica(parametro: MutableList<Parametro>) : String {
+        fun getClaveElectronica(parametro: MutableList<Parametro>, key: String) : String {
 
             if (parametro.isEmpty()) {
                 return "No existe valor para el parámetro: Clave Firma Electrónica"
@@ -58,12 +58,13 @@ class Parametros{
             } else {
 //                println("Clave Firma Electrónica ${parametro[0].nombre} ${parametro[0].valor}"  )
                 val claveFirmaElectronica : String = parametro[0].valor.toString()
+                Encriptar.setKey(key)
                 return Encriptar.decrypt(claveFirmaElectronica)
             }
             return "El parámetro Clave Firma Electrónica no fue encontrado"
         }
 
-        fun getDatosCorreo(parametro: MutableList<Parametro>) : ConfiguracionCorreo {
+        fun getDatosCorreo(parametro: MutableList<Parametro>, key: String) : ConfiguracionCorreo {
             var servidor = ""
             var puerto = 0
             var correo = ""
@@ -88,6 +89,7 @@ class Parametros{
                     }
                 }
                 println("Configuración Correo: $servidor $puerto $correo $clave")
+                Encriptar.setKey(key)
                 return ConfiguracionCorreo(servidor, puerto, correo, Encriptar.decrypt(clave))
             }
         }
