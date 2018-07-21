@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1541303a-d45e-4d6d-be4f-34547bdf1e10" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1541303a-d45e-4d6d-be4f-34547bdf1e10" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -32,15 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReporteNotaCreditoRestApi.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteNotaCreditoRestApi.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ReporteGuiaRestApi.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteGuiaRestApi.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -122,11 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="358">
               <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="200" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="200" />
             </state>
           </provider>
         </entry>
@@ -906,24 +904,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32756326" />
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="right" id="REPL" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.35213205" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Leiningen" order="9" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6231087" visible="true" weight="0.18298969" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6217331" visible="true" weight="0.185567" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info id="Structure" order="1" sideWeight="0.37689134" side_tool="true" visible="true" weight="0.18298969" />
+      <window_info id="Structure" order="1" sideWeight="0.37826684" side_tool="true" visible="true" weight="0.185567" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Console" order="10" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="9" weight="0.32753623" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -939,6 +937,7 @@
       <window_info id="Learn" order="5" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32599726" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Console" order="10" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.329375" />
     </layout>
   </component>
@@ -958,13 +957,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/comprobantes/factura/Pago.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/repository/FacturaDetalleDaoImpl.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -979,13 +971,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/com/quijotelui/clientews/Enviar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/com/quijotelui/clientews/Enviar.class" />
     <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/v_ele_reporte_notas_credito.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1055,20 +1041,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/com/quijotelui/clientews/Comprobar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/ec/gob/sri/comprobantes/ws/RespuestaSolicitud.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/com/quijotelui/clientews/Comprobar.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/ec/gob/sri/comprobantes/ws/RespuestaSolicitud.class" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Factura.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1316,6 +1290,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
           <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="200" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="200" />
         </state>
       </provider>
     </entry>
