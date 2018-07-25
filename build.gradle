@@ -68,5 +68,5 @@ dependencies {
 //	QuijoteLui Key Store
 	compile group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.59'
 	compile group: 'joda-time', name: 'joda-time', version: '2.10'
-	compile group: 'org.quijotelui', name: 'QuijoteLuiKS', version: '1.0'
+	compile group: 'org.quijotelui', name: 'QuijoteLuiKS', version: '1.1'
 }

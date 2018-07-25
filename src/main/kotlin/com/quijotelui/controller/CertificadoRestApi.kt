@@ -25,8 +25,8 @@ class CertificadoRestApi {
     lateinit var keyProperty: String
 
     @CrossOrigin(value = "*")
-    @GetMapping("/keyinfo")
-    fun getKeyInfo() : ResponseEntity<Map<String, String>> {
+    @GetMapping("/certificado")
+    fun getCertificadoInformacion() : ResponseEntity<Any> {
 
         Security.addProvider(BouncyCastleProvider())
 
@@ -37,14 +37,6 @@ class CertificadoRestApi {
 
         val k = keyStoreHistory.getInformacion(pathElectronica, keyElectronica)
 
-        val readWriteMap :HashMap<String, String> = hashMapOf()
-//        readWriteMap = hashMapOf("foo" to "a", "bar" to "s") //Sin iterator
-        for (keyInfo in k) {
-            println(keyInfo.historia + " -> " + keyInfo.valor)
-            readWriteMap.put(keyInfo.historia, keyInfo.valor)
-        }
-        val snapshot: Map<String, String> = HashMap(readWriteMap)
-
-        return ResponseEntity(snapshot, HttpStatus.OK)
+        return ResponseEntity(k, HttpStatus.OK)
     }
 }
