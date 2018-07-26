@@ -4,7 +4,7 @@ import com.quijotelui.electronico.ejecutar.Electronica
 import com.quijotelui.electronico.util.TipoComprobante
 import com.quijotelui.model.ReporteFactura
 import com.quijotelui.service.*
-import com.quijotelui.subscription.Subscription
+import com.quijotelui.subscription.SuscripcionManager
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
@@ -60,7 +60,7 @@ class ReporteFacturaRestApi {
     fun autorizarFactura(@PathVariable(value = "fechaInicio") fechaInicio : String,
                         @PathVariable(value = "fechaFin") fechaFin : String) : ResponseEntity<MutableList<ReporteFactura>> {
 
-        val subscription = Subscription(parametroService)
+        val subscription = SuscripcionManager(parametroService)
         if (!subscription.isAlive(keyProperty)) {
             return ResponseEntity(HttpStatus.UNAUTHORIZED)
         }

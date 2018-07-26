@@ -6,5 +6,6 @@ interface IParametroDao {
 
     fun findAll() : MutableList<Parametro>
     fun findByNombre(nombre : String) : MutableList<Parametro>
+    fun findByTipo(tipo : String) : MutableList<Parametro>
 
 }

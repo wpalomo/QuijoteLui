@@ -100,26 +100,30 @@ class Parametros{
 
         fun getSuscripcion(parametro: MutableList<Parametro>, key: String) : Date {
             println("Suscripción: ${parametro[0].nombre.toString()} -> ${parametro[0].valor.toString()}")
-            if (parametro.isEmpty()) {
-                return errorDate()
-            }
-            else {
-                val formatter = SimpleDateFormat("yyyy-MM-dd")
-                val suscripcionEncryptedData : String = parametro[0].valor.toString()
+            return if (parametro.isEmpty()) {
+                errorDate()
+            } else {
 
-                return try {
-                    Encriptar.setKey(key)
-                    val suscripcion = Encriptar.decrypt(suscripcionEncryptedData)
-                    formatter.parse(suscripcion)
-                } catch (e : ParseException) {
-                    errorDate()
-                } catch (e : Exception) {
-                    errorDate()
-                }
+                val suscripcionEncryptedData : String = parametro[0].valor.toString()
+                toDate(suscripcionEncryptedData, key)
+
             }
         }
 
-        private fun errorDate() : Date {
+        fun toDate(suscripcionEncryptedData : String, key :String) : Date {
+            val formatter = SimpleDateFormat("yyyy-MM-dd")
+            return try {
+                Encriptar.setKey(key)
+                val suscripcion = Encriptar.decrypt(suscripcionEncryptedData)
+                formatter.parse(suscripcion)
+            } catch (e : ParseException) {
+                errorDate()
+            } catch (e : Exception) {
+                errorDate()
+            }
+        }
+
+        fun errorDate() : Date {
             val cal = Calendar.getInstance()
             cal.time = Date()
             cal.add(Calendar.DATE, -1)

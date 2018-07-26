@@ -23,4 +23,11 @@ class ParametroDaoImpl : IParametroDao {
                 "and estado = 'Activo'")
                 .setParameter("nombre", nombre).resultList as MutableList<Parametro>
     }
+
+    override fun findByTipo(tipo: String): MutableList<Parametro> {
+        return entityMAnager.createQuery("from Parametro " +
+                "where tipo = :tipo " +
+                "and estado = 'Activo'")
+                .setParameter("tipo", tipo).resultList as MutableList<Parametro>
+    }
 }

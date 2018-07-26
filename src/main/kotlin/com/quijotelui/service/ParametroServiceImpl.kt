@@ -19,4 +19,8 @@ class ParametroServiceImpl : IParametroService {
     override fun findByNombre(nombre: String): MutableList<Parametro> {
         return parametroDao.findByNombre(nombre)
     }
+
+    override fun findByTipo(tipo: String): MutableList<Parametro> {
+        return parametroDao.findByTipo(tipo)
+    }
 }
