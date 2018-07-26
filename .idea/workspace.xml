@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1541303a-d45e-4d6d-be4f-34547bdf1e10" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QuijoteLui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/QuijoteLui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QuijoteLui_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/QuijoteLui_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QuijoteLui_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/QuijoteLui_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Parametro.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Parametro.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -38,16 +39,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CertificadoRestApi.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="180">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Parametro.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Parametro.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ele_parametros.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ele_parametros.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ele_parametros.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="insert_ele_parametros.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="22" column="112" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertificadoRestApi.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContribuyenteRestApi.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ContribuyenteRestApi.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="511">
@@ -358,7 +422,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4584768731000" />
+        <entry key="$PROJECT_DIR$" value="4584768908000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="3695632988" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3442123891" />
@@ -585,7 +649,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/xml/GeneraRetencion.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/xml/GeneraFactura.kt" />
         <option value="$PROJECT_DIR$/sql/mysql/OpenBravoPos/insert_ele_parametros.sql" />
-        <option value="$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql" />
         <option value="$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_documentos_electronicos.sql" />
         <option value="$PROJECT_DIR$/sql/mysql/OpenBravoPos/v_ele_informaciones.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/v_ele_contribuyentes.sql" />
@@ -597,7 +660,6 @@
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/extra/fe_facturadetalle_andes.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/v_ele_impuestos.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/ele_documentos_electronicos.sql" />
-        <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/extra/fe_facturamaestro_andes.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/v_ele_informaciones.sql" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/comprobantes/factura/Pago.kt" />
@@ -621,10 +683,15 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/GuiaRestApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteRetencionRestApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/QuijoteLuiApplication.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Parametro.kt" />
+        <option value="$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql" />
+        <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql" />
+        <option value="$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql" />
+        <option value="$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql" />
       </list>
     </option>
   </component>
@@ -640,6 +707,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -650,6 +718,36 @@
             <path>
               <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="oracle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="oracle" type="462c0819:PsiDirectoryNode" />
+              <item name="roteg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -680,7 +778,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="quijotelui" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
@@ -694,7 +792,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -834,30 +931,65 @@
       <window_info anchor="right" id="Leiningen" order="9" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6176066" visible="true" weight="0.26675257" />
-      <window_info anchor="bottom" id="Build" order="9" weight="0.32753623" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6162311" weight="0.27061856" />
       <window_info anchor="right" id="Gradle" order="6" />
-      <window_info id="Structure" order="1" sideWeight="0.3823934" side_tool="true" visible="true" weight="0.26675257" />
+      <window_info id="Structure" order="1" sideWeight="0.38376892" side_tool="true" weight="0.27061856" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="UI Designer" order="7" />
-      <window_info anchor="bottom" id="Console" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32599726" />
-      <window_info id="Project Explorer" order="3" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Job Explorer" order="4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Jelastic" order="8" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.32753623" />
       <window_info id="Learn" order="5" />
-      <window_info anchor="right" id="FAQ Robot" order="5" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="UI Designer" order="7" />
+      <window_info id="Project Explorer" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Jelastic" order="8" />
+      <window_info anchor="right" id="FAQ Robot" order="5" />
+      <window_info id="Job Explorer" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32599726" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Console" order="10" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.329375" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Console" order="10" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.32753623" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35213205" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="UI Designer" order="7" />
+      <window_info id="Project Explorer" order="3" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32756326" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Jelastic" order="8" />
+      <window_info id="Job Explorer" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="FAQ Robot" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6162311" visible="true" weight="0.27061856" />
+      <window_info id="Learn" order="5" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32599726" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Leiningen" order="9" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Structure" order="1" sideWeight="0.38376892" side_tool="true" visible="true" weight="0.27061856" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.329375" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="REPL" order="10" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
@@ -875,35 +1007,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/QuijoteLuiClient/src/com/quijotelui/ws/util/ArchivoUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2780">
-          <caret line="139" column="17" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/quijotelui/clientews/QuijoteLuiClient/1.2/QuijoteLuiClient-1.2.jar!/com/quijotelui/clientews/Enviar.class" />
-    <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/v_ele_reporte_notas_credito.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" selection-start-line="1" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/v_ele_reporte_notas_credito.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/v_ele_reporte_facturas.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/v_ele_facturas.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-180" />
@@ -958,13 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ContribuyenteRestApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1150,20 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteFacturaRestApi.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -1192,10 +1274,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ContribuyenteRestApi.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="220">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1203,6 +1285,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="70" column="73" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="72" column="57" selection-start-line="72" selection-start-column="57" selection-end-line="72" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/CertificadoRestApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Parametro.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="112" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
         </state>
       </provider>
     </entry>

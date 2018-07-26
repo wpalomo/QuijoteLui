@@ -23,6 +23,9 @@ class Parametro : Serializable {
     @Column(name = "observacion")
     var observacion : String? = null
 
+    @Column(name = "tipo")
+    var tipo : String? = null
+
     @Column(name = "estado")
     var estado : String? = null
 

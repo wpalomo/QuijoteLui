@@ -12,6 +12,7 @@ CREATE TABLE [dbo].[ele_parametros](
 	[nombre] [varchar](255) NULL,
 	[valor] [varchar](255) NULL,
 	[observacion] [varchar](255) NULL,
+	[tipo] [varchar](20) NULL,
 	[estado] [varchar](255) NULL,
 PRIMARY KEY CLUSTERED
 (

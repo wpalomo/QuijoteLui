@@ -3,6 +3,7 @@ CREATE TABLE ele_parametros (
   nombre varchar(255) DEFAULT NULL,
   valor varchar(255) DEFAULT NULL,
   observacion varchar(255) DEFAULT NULL,
+  tipo varchar(20) DEFAULT NULL,
   estado varchar(255) DEFAULT NULL,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
