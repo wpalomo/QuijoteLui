@@ -9,7 +9,7 @@
 hs_err_pid*
 
 
-/.idea/libraries/
+/.idea/libraries
 /.nb-gradle/
 /.gradle/
 /build/
