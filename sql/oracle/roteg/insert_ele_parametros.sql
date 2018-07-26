@@ -17,7 +17,7 @@ Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (16,
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (17,'Puerto Servidor Correo','465','Es el número de puerto del servidor de correo','Activo','CORREO');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (18,'Correo','jl@gmail.com','Es la dirección de correo electrónico','Activo','CORREO');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (19,'Clave Correo','***************==','Es la clave de la dirección de correo electrónico','Activo','CORREO');
-Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (20,'Suscripción (aaaa-mm-dd)','**************==','Suscripción','Activo','SUSCRIPCIÓN');
+Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (20,'Suscripción','**************==','Suscripción','Activo','SUSCRIPCIÓN');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (21,'Correo de cuenta','jl@gmail.com','Suscripción','Activo','SUSCRIPCIÓN');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (22,'Clave de cuenta','****************','Suscripción','Activo','SUSCRIPCIÓN');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (23,'Organización','Ideas en Binario','Suscripción','Activo','SUSCRIPCIÓN');

@@ -11,7 +11,7 @@ class SuscripcionManager(val parametroService : IParametroService) {
 
     fun isAlive(key : String) : Boolean {
         val dateSubscription = Parametros.getSuscripcion(
-                parametroService.findByNombre("Suscripción (aaaa-mm-dd)"), key)
+                parametroService.findByNombre("Suscripción"), key)
 
         val diasFinal = Days.daysBetween(DateTime(Date()), DateTime(dateSubscription)).days
         println("Fecha final de suscripción: $dateSubscription")
@@ -34,7 +34,7 @@ class SuscripcionManager(val parametroService : IParametroService) {
         if (parametro.size > 0) {
             for (i in parametro.indices) {
                 val row = parametro[i]
-                if (row.nombre == "Suscripción (aaaa-mm-dd)") {
+                if (row.nombre == "Suscripción") {
                     fechaFinal = Parametros.toDate(row.valor!!, key)
                     diasRestantes = Days.daysBetween(DateTime(Date()), DateTime(fechaFinal)).days
                 }
