@@ -4,6 +4,12 @@ Documentos Electrónicos SRI del Ecuador
 
 Software REST API escrito en Kotlin y Java, Framework SpringBoot
 
+## Bases de datos soportadas
+* Postgres
+* MySql o MariaDB
+* Sql Server
+* Oracle
+
 ## Dependencias:
 Estás dependencias se deben añadir en el repositorio local de Maven
 
