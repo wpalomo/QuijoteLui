@@ -4,28 +4,27 @@ Documentos Electrónicos SRI del Ecuador
 
 Software REST API escrito en Kotlin y Java, Framework SpringBoot
 
-##
-Dependencias:
+##Dependencias:
 Estás dependencias se deben añadir en el repositorio local de Maven
 
-###
-QuijoteLui Firmador:
+###QuijoteLui Firmador:
 
 https://gitlab.com/allku/QuijoteLuiFirmador
 
-###
-QuijoteLui Client
+###QuijoteLui Client
 
 https://gitlab.com/allku/QuijoteLuiClient
 
-###
-QuijoteLui Printer
+###QuijoteLui Printer
 
 https://gitlab.com/allku/QuijoteLuiPrinter
 
-###
-Oracle JDBC (Para bases de datos oracle 11g)
-Se debe descargar manualmente el archiva jar y añádirlo al repositorio local Maven
+###QuijoteLui Key Store
+
+https://gitlab.com/allku/QuijoteLuiKS
+
+###Oracle JDBC (Para bases de datos oracle 11g)
+Se debe descargar manualmente el archivo jar y añádirlo al repositorio local Maven
 ```
 $ mvn install:install-file -Dfile=ojdbc6.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0 -Dpackaging=jar
 ```
