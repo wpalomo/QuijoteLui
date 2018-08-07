@@ -14,8 +14,8 @@ SELECT DISTINCT
         '3',
         '-1'
     ) AS codigo_porcentaje,
-    ROUND(decode(d.porcentaje_iva,0,f.total_sin_iva,round(
-        f.total_con_iva - f.descuentos,
+    ROUND(decode(d.porcentaje_iva,0,f.total_sin_iva - DISMEMAYOR.pkg_info_descuento.fun_descuento_sin_iva('FAC', f.NUM_FACTURA),round(
+        f.total_con_iva - DISMEMAYOR.pkg_info_descuento.fun_descuento_iva('FAC', f.NUM_FACTURA),
         2
     )),2) AS base_imponible,
     d.porcentaje_iva AS tarifa,
