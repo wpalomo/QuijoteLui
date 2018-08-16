@@ -208,7 +208,7 @@ class Electronica(val codigo : String, val numero : String, val parametroService
                 electronico = electronicoUpdate[e]
             }
 
-            electronico.observacion = mensaje + " | " + electronico.observacion
+            electronico.observacion = mensaje
             electronico.estado = respuesta.estado
 
             this.electronicoService!!.updateElectronico(electronico)
@@ -269,12 +269,12 @@ class Electronica(val codigo : String, val numero : String, val parametroService
                 electronico = electronicoUpdate[e]
             }
 
-            electronico.observacion = mensaje + electronico.observacion
+            electronico.observacion = mensaje
 
             if (autorizacionEstado.autorizacion.fechaAutorizacion!=null) {
 
                 electronico.observacion = " | ${autorizacionEstado.autorizacion.numeroAutorizacion} " +
-                        "${autorizacionEstado.autorizacion.fechaAutorizacion} " + electronico.observacion
+                        "${autorizacionEstado.autorizacion.fechaAutorizacion} "
                 electronico.numeroAutorizacion = autorizacionEstado.autorizacion.numeroAutorizacion
 
 
