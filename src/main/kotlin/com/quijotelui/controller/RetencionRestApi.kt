@@ -7,6 +7,7 @@ import com.quijotelui.service.IElectronicoService
 import com.quijotelui.service.IInformacionService
 import com.quijotelui.service.IParametroService
 import com.quijotelui.service.IRetencionService
+import com.quijotelui.subscription.SuscripcionManager
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
@@ -80,6 +81,11 @@ class RetencionRestApi {
     @GetMapping("/retencion_procesar/codigo/{codigo}/numero/{numero}")
     fun procesarXml(@PathVariable(value = "codigo") codigo : String,
                     @PathVariable(value = "numero") numero : String) : ResponseEntity<MutableList<Any>> {
+
+        val subscription = SuscripcionManager(parametroService)
+        if (!subscription.isAlive(keyProperty)) {
+            return ResponseEntity(HttpStatus.UNAUTHORIZED)
+        }
 
         if (codigo == null || numero == null) {
             return ResponseEntity(HttpStatus.CONFLICT)
