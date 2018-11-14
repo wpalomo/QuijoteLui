@@ -127,9 +127,10 @@ class EnviarCorreo(val codigo : String,
         val parametro = parametroService.findAll()
         val datosCorreo = Parametros.getDatosCorreo(parametro, key)
 
-        val rutaPDF= Parametros.getRuta(parametroService.findByNombre("PDF"))
-        val rutaXML= Parametros.getRuta(parametroService.findByNombre("Autorizado"))
-        val rutaTemplateHTML= Parametros.getRuta(parametroService.findByNombre("Correo Plantilla"))
+        val rutaPDF = Parametros.getRuta(parametroService.findByNombre("PDF"))
+        val rutaXML = Parametros.getRuta(parametroService.findByNombre("Autorizado"))
+        val rutaTemplateHTML = Parametros.getRuta(parametroService.findByNombre("Correo Plantilla"))
+        val rutaLogo = Parametros.getRuta(parametroService.findByNombre("Logo"))
 
 
         try {
@@ -154,7 +155,7 @@ class EnviarCorreo(val codigo : String,
             }
 //            correo.enviar("$descripcion Electrónica",
 //                    "Saludos cordiales, Adjunto el comprobante electrónico")
-            correo.enviar("$descripcion Electrónica", getMensajeHTML(rutaTemplateHTML))
+            correo.enviar("$descripcion Electrónica", getMensajeHTML(rutaTemplateHTML), rutaLogo)
 
         }
         catch (e : java.lang.IllegalArgumentException) {

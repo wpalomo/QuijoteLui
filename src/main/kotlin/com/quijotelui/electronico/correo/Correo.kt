@@ -53,10 +53,12 @@ class Correo(val servidor : String, val puerto : Int) {
         println("Destinatario: $correoDestinatario")
     }
 
-    fun enviar(asunto : String ,mensaje : String) {
+    fun enviar(asunto : String ,mensaje : String, logo : String) {
         email.subject = asunto
 //        email.setTextMsg(mensaje)
-        email.setHtmlMsg(mensaje)
+        val cid = email.embed(File(logo))
+//        println(mensaje.replace("cid_replace",cid))
+        email.setHtmlMsg(mensaje.replace("cid_replace",cid))
         email.attach(pdfAdjunto)
         email.attach(xmlAdjunto)
         email.send()
