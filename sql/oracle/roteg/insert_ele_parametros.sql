@@ -21,3 +21,4 @@ Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (20,
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (21,'Correo de cuenta','jl@gmail.com','Suscripción','Activo','SUSCRIPCIÓN');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (22,'Clave de cuenta','****************','Suscripción','Activo','SUSCRIPCIÓN');
 Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (23,'Organización','Ideas en Binario','Suscripción','Activo','SUSCRIPCIÓN');
+Insert into ELE_PARAMETROS (ID,NOMBRE,VALOR,OBSERVACION,ESTADO,TIPO) values (24,'Correo Plantilla','/app/Quijotelui/recursos/template/mail.html','Plantilla de mensaje de correo','Activo','CORREO')

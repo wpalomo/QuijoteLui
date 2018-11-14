@@ -55,7 +55,8 @@ class Correo(val servidor : String, val puerto : Int) {
 
     fun enviar(asunto : String ,mensaje : String) {
         email.subject = asunto
-        email.setTextMsg(mensaje)
+//        email.setTextMsg(mensaje)
+        email.setHtmlMsg(mensaje)
         email.attach(pdfAdjunto)
         email.attach(xmlAdjunto)
         email.send()

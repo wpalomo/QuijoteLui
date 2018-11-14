@@ -8,10 +8,10 @@ import com.quijotelui.electronico.xml.GeneraRetencion
 import com.quijotelui.model.Informacion
 import com.quijotelui.service.*
 import org.apache.commons.mail.EmailException
-import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import java.io.File
+import java.nio.charset.StandardCharsets
 import javax.mail.internet.AddressException
 import javax.mail.internet.InternetAddress
 
@@ -110,7 +110,7 @@ class EnviarCorreo(val codigo : String,
     fun enviar(tipo : TipoComprobante) : ResponseEntity<MutableList<Informacion>> {
 
 
-        val descripcion : String = tipo.toString()
+        val descripcion : String = translateTipo(tipo.toString())
 
         val claveAcceso : String = getClaveAcceso(tipo)
         if (claveAcceso == "") {
@@ -151,8 +151,9 @@ class EnviarCorreo(val codigo : String,
                     }
                     correo.destinatario(informacion[i].valor.toString())
             }
-            correo.enviar("$descripcion Electrónica",
-                    "Saludos cordiales, Adjunto el comprobante electrónico")
+//            correo.enviar("$descripcion Electrónica",
+//                    "Saludos cordiales, Adjunto el comprobante electrónico")
+            correo.enviar("$descripcion Electrónica", getMensajeHTML())
 
         }
         catch (e : java.lang.IllegalArgumentException) {
@@ -174,5 +175,19 @@ class EnviarCorreo(val codigo : String,
 
         return ResponseEntity<MutableList<Informacion>>(informacion, HttpStatus.OK)
 
+    }
+
+    fun translateTipo(tipo : String) : String {
+        when (tipo) {
+            "FACTURA" -> return "Factura"
+            "NOTA_CREDITO" -> return "Nota de Crédito"
+            "RETENCION" -> return "Retención"
+            else -> return ""
+        }
+    }
+
+    fun getMensajeHTML() : String {
+        val encoded = File("/app/Quijotelui/recursos/template/mail.html").readBytes()
+        return String(encoded, StandardCharsets.UTF_8)
     }
 }
