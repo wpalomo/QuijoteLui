@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1541303a-d45e-4d6d-be4f-34547bdf1e10" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QuijoteLui_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/QuijoteLui_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QuijoteLui_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/QuijoteLui_test.iml" afterDir="false" />
+    <list default="true" id="1541303a-d45e-4d6d-be4f-34547bdf1e10" name="Default" comment="Vista Qbiz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
@@ -86,59 +84,61 @@
     <session id="-1509584531">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="81" />
+          <entry key="project.closed" value="84" />
           <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="33" />
-          <entry key="project.open.time.7" value="25" />
+          <entry key="project.open.time.6" value="34" />
+          <entry key="project.open.time.7" value="27" />
           <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="84" />
+          <entry key="project.opened" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="gradle" value="15" />
+          <entry key="gradle" value="16" />
           <entry key="gradlew" value="1" />
-          <entry key="kt" value="83" />
+          <entry key="kt" value="91" />
           <entry key="log" value="1" />
           <entry key="md" value="2" />
-          <entry key="properties" value="16" />
-          <entry key="sql" value="8" />
+          <entry key="properties" value="19" />
+          <entry key="sql" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="Groovy" value="15" />
-          <entry key="Kotlin" value="83" />
+          <entry key="Groovy" value="16" />
+          <entry key="Kotlin" value="91" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="16" />
-          <entry key="SQL" value="8" />
+          <entry key="Properties" value="19" />
+          <entry key="SQL" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="gradle" value="5" />
-          <entry key="kt" value="1247" />
+          <entry key="gradle" value="7" />
+          <entry key="kt" value="1751" />
           <entry key="md" value="84" />
-          <entry key="properties" value="406" />
+          <entry key="properties" value="503" />
+          <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="5" />
-          <entry key="Kotlin" value="1247" />
+          <entry key="Groovy" value="7" />
+          <entry key="Kotlin" value="1751" />
           <entry key="Markdown" value="84" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Properties" value="406" />
+          <entry key="Properties" value="503" />
+          <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -147,10 +147,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+            <state relative-caret-position="311">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -158,8 +158,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="44">
+              <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -204,8 +204,8 @@
       <find>retencion_procesar</find>
       <find>Prueba</find>
       <find>xml</find>
-      <find>enviar</find>
       <find>FacturaRestApi</find>
+      <find>enviar</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src</dir>
@@ -505,9 +505,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4607677559000" />
+        <entry key="$PROJECT_DIR$" value="4609297538000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1584408121" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3161035319" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3442123891" />
       </map>
     </option>
@@ -722,7 +722,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/v_ele_facturas.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/v_ele_pagos.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/insert_ele_parametros.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/extra/FUN_GET_IVA.sql" />
@@ -738,7 +737,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ArchivosRestApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/subscription/ValidateSubscription.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/ejecutar/ProcesarElectronica.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/correo/EnviarCorreo.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteNotaCreditoRestApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteGuiaRestApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ReporteFacturaRestApi.kt" />
@@ -751,7 +749,6 @@
         <option value="$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql" />
         <option value="$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql" />
         <option value="$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql" />
-        <option value="$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/repository/IParametroDao.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/service/ParametroServiceImpl.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/service/IParametroService.kt" />
@@ -767,8 +764,11 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/FacturaRestApi.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/RetencionRestApi.kt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Electronico.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/repository/ElectronicoDaoImpl.kt" />
+        <option value="$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/correo/EnviarCorreo.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/correo/Correo.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Electronico.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/QuijoteLuiApplication.kt" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt" />
@@ -794,6 +794,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -805,6 +806,17 @@
             <path>
               <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -844,8 +856,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="quijotelui" type="462c0819:PsiDirectoryNode" />
-              <item name="electronico" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
@@ -854,17 +865,10 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="QuijoteLui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QuijoteLui" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -972,7 +976,7 @@
     <frame x="70" y="29" width="1530" height="871" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.599681" visible="true" weight="0.2388664" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.599681" visible="true" weight="0.24561404" />
       <window_info id="Structure" order="1" sideWeight="0.40031898" side_tool="true" weight="0.37704918" />
       <window_info id="Designer" order="2" />
       <window_info id="Project Explorer" order="3" />
@@ -1022,34 +1026,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/ele_parametros.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/sqlserver/qbiz/ele_parametros.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/ContribuyenteRestApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/repository/IParametroDao.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1134,13 +1110,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" selection-start-line="19" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -1231,13 +1200,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quijotelui.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="23" column="265" selection-start-line="23" selection-start-column="265" selection-end-line="23" selection-end-column="265" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/quijotelui.log" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/controller/util/Extraer.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1249,9 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="33" selection-start-column="33" selection-end-column="33" />
-          <folding>
-            <element signature="e#35#270#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1339,44 +1299,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Electronico.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/correo/ConfiguracionCorreo.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#30#141#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="44">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/sql/mysql/OpenBravoPos/ele_parametros.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/oracle/roteg/insert_ele_parametros.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="506">
+          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/correo/Correo.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="60" column="41" lean-forward="true" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/model/Electronico.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/correo/EnviarCorreo.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="157" column="96" selection-start-line="157" selection-start-column="96" selection-end-line="157" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="72" column="55" selection-start-line="72" selection-start-column="55" selection-end-line="72" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/QuijoteLuiApplication.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#24#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/quijotelui/electronico/util/Encriptar.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        <state relative-caret-position="311">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="44">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
         </state>
       </provider>
     </entry>
