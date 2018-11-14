@@ -129,6 +129,7 @@ class EnviarCorreo(val codigo : String,
 
         val rutaPDF= Parametros.getRuta(parametroService.findByNombre("PDF"))
         val rutaXML= Parametros.getRuta(parametroService.findByNombre("Autorizado"))
+        val rutaTemplateHTML= Parametros.getRuta(parametroService.findByNombre("Correo Plantilla"))
 
 
         try {
@@ -153,7 +154,7 @@ class EnviarCorreo(val codigo : String,
             }
 //            correo.enviar("$descripcion Electrónica",
 //                    "Saludos cordiales, Adjunto el comprobante electrónico")
-            correo.enviar("$descripcion Electrónica", getMensajeHTML())
+            correo.enviar("$descripcion Electrónica", getMensajeHTML(rutaTemplateHTML))
 
         }
         catch (e : java.lang.IllegalArgumentException) {
@@ -186,8 +187,8 @@ class EnviarCorreo(val codigo : String,
         }
     }
 
-    fun getMensajeHTML() : String {
-        val encoded = File("/app/Quijotelui/recursos/template/mail.html").readBytes()
+    fun getMensajeHTML(ruta : String) : String {
+        val encoded = File(ruta).readBytes()
         return String(encoded, StandardCharsets.UTF_8)
     }
 }
