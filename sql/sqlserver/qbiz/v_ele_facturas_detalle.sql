@@ -12,8 +12,8 @@ CREATE VIEW [dbo].[v_ele_facturas_detalle]
 AS
 AS
 SELECT ROW_NUMBER() OVER(ORDER BY numero ASC) as id, codigo, numero, codigo_principal,
-Descripcion, CAST(ROUND(Cantidad, 2) AS numeric(19, 2)) AS CANTIDAD,
-CAST(ROUND(Precio_Uni, 2) AS numeric(19,2)) AS PRECIO_UNITARIO,
+Descripcion, CAST(ROUND(Cantidad, 4) AS numeric(19, 4)) AS CANTIDAD,
+CAST(ROUND(Precio_Uni, 4) AS numeric(19, 4)) AS PRECIO_UNITARIO,
 cod_porc AS CODIGO_PORCENTAJE,
 porc_iva PORCENTAJE_IVA,
 CAST(ROUND((Cantidad * (Precio_Uni-Descuento))*(CASE WHEN Impuesto = 0 then 0 else porc_iva/100 end), 2) AS numeric(19, 2)) AS VALOR_IVA,

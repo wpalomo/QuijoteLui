@@ -47,7 +47,7 @@ class GeneraFactura(val facturaService : IFacturaService, val codigo : String, v
 
         try {
             factura.setId(id = "comprobante")
-            factura.setVersion(version = "1.0.0")
+            factura.setVersion(version = "1.1.0")
 
             factura.setInformacionTributaria(getInformacionTributaria())
             factura.setInformacionFactura(getInformacionFactura())
@@ -201,8 +201,8 @@ class GeneraFactura(val facturaService : IFacturaService, val codigo : String, v
             var detalle = Detalle()
             detalle.codigoPrincipal = facturaDetalles[i].codigoPrincipal
             detalle.descripcion = facturaDetalles[i].descripcion
-            detalle.cantidad = facturaDetalles[i].cantidad?.setScale(2, BigDecimal.ROUND_HALF_UP)
-            detalle.precioUnitario = facturaDetalles[i].precioUnitario?.setScale(2, BigDecimal.ROUND_HALF_UP)
+            detalle.cantidad = facturaDetalles[i].cantidad?.setScale(4, BigDecimal.ROUND_HALF_UP)
+            detalle.precioUnitario = facturaDetalles[i].precioUnitario?.setScale(4, BigDecimal.ROUND_HALF_UP)
             detalle.descuento = facturaDetalles[i].descuento?.setScale(2, BigDecimal.ROUND_HALF_UP)
             detalle.precioTotalSinImpuesto = facturaDetalles[i].precioTotalSinImpuesto?.setScale(2, BigDecimal.ROUND_HALF_UP)
             
