@@ -1,6 +1,7 @@
 package com.quijotelui.repository
 
 import com.quijotelui.model.Parametro
+import com.quijotelui.model.Contribuyente
 import org.springframework.stereotype.Repository
 import org.springframework.transaction.annotation.Transactional
 import javax.persistence.EntityManager
@@ -29,5 +30,10 @@ class ParametroDaoImpl : IParametroDao {
                 "where tipo = :tipo " +
                 "and estado = 'Activo'")
                 .setParameter("tipo", tipo).resultList as MutableList<Parametro>
+    }
+
+    override fun findContribuyente(): MutableList<Contribuyente> {
+        return entityMAnager.createQuery("from Contribuyente")
+                .resultList as MutableList<Contribuyente>
     }
 }

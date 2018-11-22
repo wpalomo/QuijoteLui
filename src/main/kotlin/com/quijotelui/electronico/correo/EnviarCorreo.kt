@@ -109,7 +109,6 @@ class EnviarCorreo(val codigo : String,
 
     fun enviar(tipo : TipoComprobante) : ResponseEntity<MutableList<Informacion>> {
 
-
         val descripcion : String = translateTipo(tipo.toString())
 
         val claveAcceso : String = getClaveAcceso(tipo)
@@ -132,11 +131,14 @@ class EnviarCorreo(val codigo : String,
         val rutaTemplateHTML = Parametros.getRuta(parametroService.findByNombre("Correo Plantilla"))
         val rutaLogo = Parametros.getRuta(parametroService.findByNombre("Logo"))
 
+        val contribuyenteRemitente = parametroService.findContribuyente()
 
         try {
             val correo = Correo(datosCorreo.servidor, datosCorreo.puerto)
 
-            correo.remitente(datosCorreo.correo, datosCorreo.clave)
+            correo.remitente(datosCorreo.correo,
+                    contribuyenteRemitente[0].nombreComercial!!,
+                    datosCorreo.clave)
 
             correo.pdf(File(rutaPDF +
                     File.separatorChar +

@@ -1,5 +1,6 @@
 package com.quijotelui.service
 
+import com.quijotelui.model.Contribuyente
 import com.quijotelui.model.Parametro
 import com.quijotelui.repository.IParametroDao
 import org.springframework.beans.factory.annotation.Autowired
@@ -22,5 +23,9 @@ class ParametroServiceImpl : IParametroService {
 
     override fun findByTipo(tipo: String): MutableList<Parametro> {
         return parametroDao.findByTipo(tipo)
+    }
+
+    override fun findContribuyente(): MutableList<Contribuyente> {
+        return parametroDao.findContribuyente()
     }
 }

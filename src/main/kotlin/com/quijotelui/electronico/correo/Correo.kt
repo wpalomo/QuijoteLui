@@ -18,8 +18,8 @@ class Correo(val servidor : String, val puerto : Int) {
 //        println("Correo inicializado")
     }
 
-    fun remitente(correoRemitente : String, clave : String) {
-        email.setFrom(correoRemitente)
+    fun remitente(correoRemitente : String, nombreRemitente : String, clave : String) {
+        email.setFrom(correoRemitente, nombreRemitente)
         email.setAuthenticator(DefaultAuthenticator(correoRemitente, clave))
     }
 
