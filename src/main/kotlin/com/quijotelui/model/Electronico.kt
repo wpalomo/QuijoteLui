@@ -15,7 +15,7 @@ class Electronico : Serializable {
      */
 //    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator = "id_Sequence")  //Oracle
 //    @SequenceGenerator(name = "id_Sequence", sequenceName = "SEQ_ELE_DOCUMENTOS") //Oracle
-    @GeneratedValue(strategy = GenerationType.AUTO) //MySql - Sql Server
+    @GeneratedValue(strategy = GenerationType.AUTO) //MySql - Sql Server - PostgreSQL
     @Column(name = "id")
     var id : Long? = null
 
